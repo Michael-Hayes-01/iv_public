@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="info" name="MyApp">
+    <Appenders>
+<!--        <MemoryMappedFile name="BfMemMapLogFile" fileName="D:/data/logs/bf-one.log">-->
+<!--            <PatternLayout pattern="%d{ABSOLUTE} %p [%c{1}] %m%n"/>-->
+<!--        </MemoryMappedFile>-->
+        <Console name="stdout" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{ABSOLUTE} %p [%c{1}] %m%n"/>
+        </Console>
+    </Appenders>
+
+    <Loggers>
+        <Root level="info">
+<!--            <AppenderRef ref="BfMemMapLogFile"/>-->
+            <AppenderRef ref="stdout"/>
+        </Root>
+    </Loggers>
+</Configuration>
